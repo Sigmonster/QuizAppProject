@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>QuizApp</title>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/normalize.css">
+</head>
+<body>
+	<header>
+		<div class="bannerbox">
+			<h1>Technology Quiz App</h1>
+		</div>
+		<ul class="bannerbuttons">
+			<li><input type="button" class="bannerbutton" value="Help?"></li>
+			<li><input type="button" class="bannerbutton" value="New Game"></li>
+		</ul>
+	</header>
+	<section class="game-area">
+		<section class="questionbox"><h3>Computer Hardware Question: Which one of the following pictures is Random Access Memory(RAM)?<h3>
+		</section>
+		<section class="questioncontentbox">
+			<ul class="contentlist">
+				<li><img src="img/pic1.jpg" class="contentimg"></li>
+				<li><img src="img/pic2.jpg" class="contentimg"></li>
+				<li><img src="img/pic3.jpg" class="contentimg"></li>
+				<li><img src="img/pic4.jpg" class="contentimg"></li>
+			</ul>
+		</section>
+		<section class="choicesbox">
+			<ul class="choicelist">
+				<li><h3><input type="radio" name="option" value="0">A</h3></li>
+				<li><h3><input type="radio" name="option" value="1">B</h3></li>
+				<li><h3><input type="radio" name="option" value="2">C</h3></li>
+				<li><h3><input type="radio" name="option" value="3">D</h3></li>
+			</ul>
+		<div class="submitSection">
+			<input type="button" class="submitbutton" value="Submit">
+		</div>
+		</section>
+	</section>
+	<script src="//code.jquery.com/jquery-3.1.0.min.js"></script>
+	<script type="text/javascript" src="js/app.js"></script>	
+</body>
+</html>

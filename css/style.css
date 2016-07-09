@@ -1,0 +1,71 @@
+/*Styles to assist with debugging*/
+body {
+	background-color: LightGray;
+}
+div, ul, li, p, h1, h2, h3, h4, h5, section {
+	border: 1px solid Chocolate;
+}
+
+/*Global Best Practices*/
+html {
+	box-sizing: border-box;
+	-webkit-font-smoothing: antialiased;
+
+}
+*, *:before, *:after {
+	box-sizing: inherit;
+}
+/*applies to multiple sections*/
+header, .game-area{
+	width:900px;
+	margin:0 auto 0 auto;
+	background-color: lightsteelblue;
+	text-align:center;
+}
+header h1, ul, li, div, section, h1, h2, h3{
+	margin:0;
+	padding:0;
+}
+/*header section*/
+header {
+
+}
+.bannerbuttons li{
+	display: inline-block;
+}
+
+/*questionbox section*/
+.questionbox{
+	height:100px;
+}
+/*game-area section*/
+.game-area{
+	height: 850px;
+	margin:0 auto 0 auto;
+}
+.contentimg{
+	display:inline;
+	height:170px;
+	width:auto;
+}
+.game-area li{
+	overflow: hidden;
+	height:25%;
+	list-style:none;
+}
+.choicelist h3{
+	padding-top:80px;
+}
+.game-area ul{
+	height:700px;
+}
+.game-area .questioncontentbox{
+width: 50%;
+min-height:600px;
+float:left;
+}
+.game-area .choicesbox{
+width: 50%;
+min-height:600px;
+float:right;
+}
