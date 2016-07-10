@@ -13,27 +13,30 @@
 		</div>
 		<ul class="bannerbuttons">
 			<li><input type="button" class="bannerbutton" value="Help?"></li>
-			<li><input type="button" class="bannerbutton" value="New Game"></li>
+			<li><input type="button" class="NewGameButton" value="New Game"></li>
 		</ul>
 	</header>
-	<section class="game-area">
-		<section class="questionbox"><h3>Computer Hardware Question: Which one of the following pictures is Random Access Memory(RAM)?<h3>
+	<section class="game-area" id="game">
+	<div id="game-overlay">
+		<h2 id=feedback-title></h2>
+		<p id=feedback-message></p>
+		<input type="button" class="continueButton" value="continue">
+	</div>
+	<div id="overlay-lastpage">
+		<h2>You Finished the Game! Great Job!</h2>
+		<p id="lastpage-message">View your stats below. Thanks for playing, press New Game to play again.</p>
+		<h3 id="statsFinal">Question Number: <span id="final1"></span>/5   Correct: <span id="final2"></span>%  Incorrect: <span id="final3"></span>%</h3>
+		<h3>Start:  <span id="final4"></span> End:  <span id="final5"></span></h3>
+	</div>
+		<section class="questionbox"><h3 id="question"></h3></section>
+		<section class="gamestatbox">
+		<h3 id="statsTracker">Question Number: <span id="stat1"></span>/5   Correct: <span id="stat2"></span>%  Incorrect: <span id="stat3"></span>%</h3>
 		</section>
 		<section class="questioncontentbox">
-			<ul class="contentlist">
-				<li><img src="img/pic1.jpg" class="contentimg"></li>
-				<li><img src="img/pic2.jpg" class="contentimg"></li>
-				<li><img src="img/pic3.jpg" class="contentimg"></li>
-				<li><img src="img/pic4.jpg" class="contentimg"></li>
-			</ul>
+			<ul class="contentlist"> </ul>
 		</section>
 		<section class="choicesbox">
-			<ul class="choicelist">
-				<li><h3><input type="radio" name="option" value="0">A</h3></li>
-				<li><h3><input type="radio" name="option" value="1">B</h3></li>
-				<li><h3><input type="radio" name="option" value="2">C</h3></li>
-				<li><h3><input type="radio" name="option" value="3">D</h3></li>
-			</ul>
+			<ul class="choicelist"> </ul>
 		<div class="submitSection">
 			<input type="button" class="submitbutton" value="Submit">
 		</div>

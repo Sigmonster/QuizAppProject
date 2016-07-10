@@ -33,15 +33,33 @@ header {
 .bannerbuttons li{
 	display: inline-block;
 }
-
-/*questionbox section*/
-.questionbox{
-	height:100px;
-}
 /*game-area section*/
+#game-overlay, #overlay-lastpage{
+	height:850px;
+	width:900px;
+	position:absolute;
+	margin:0 auto 0 auto;
+	background-color: black;
+	color:white;
+}
+#overlay-lastpage{
+	display:none;
+}
 .game-area{
 	height: 850px;
 	margin:0 auto 0 auto;
+}
+.questionbox{
+	height:50px;
+}
+.questionbox h3{
+	height: 50px;
+}
+.gamestatbox{
+	height:50px;
+}
+.gamestatbox h3{
+	float:left;
 }
 .contentimg{
 	display:inline;
@@ -56,16 +74,19 @@ header {
 .choicelist h3{
 	padding-top:80px;
 }
+.contentlist h3{
+	padding-top:80px;
+}
 .game-area ul{
 	height:700px;
 }
 .game-area .questioncontentbox{
-width: 50%;
-min-height:600px;
-float:left;
+	width: 50%;
+	min-height:600px;
+	float:left;
 }
 .game-area .choicesbox{
-width: 50%;
-min-height:600px;
-float:right;
+	width: 50%;
+	min-height:600px;
+	float:right;
 }
