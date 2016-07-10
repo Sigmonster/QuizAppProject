@@ -1,5 +1,5 @@
 /*Styles to assist with debugging*/
-body {
+/*body {
 	background-color: LightGray;
 }
 div, ul, li, p, h1, h2, h3, h4, h5, section {
@@ -19,12 +19,25 @@ html {
 header, .game-area{
 	width:900px;
 	margin:0 auto 0 auto;
-	background-color: lightsteelblue;
+	background-color: white;
 	text-align:center;
 }
 header h1, ul, li, div, section, h1, h2, h3{
 	margin:0;
 	padding:0;
+}
+input[type="button"] {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    height:33px;
+    width:112px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
 }
 /*header section*/
 header {
@@ -41,6 +54,11 @@ header {
 	margin:0 auto 0 auto;
 	background-color: black;
 	color:white;
+	border-width:5px;
+
+}
+#game-overlay h2, #overlay-lastpage h2{
+padding-top: 125px;
 }
 #overlay-lastpage{
 	display:none;
@@ -48,6 +66,8 @@ header {
 .game-area{
 	height: 850px;
 	margin:0 auto 0 auto;
+	border-width:5px;	
+	border-style:inset;
 }
 .questionbox{
 	height:50px;
@@ -56,7 +76,7 @@ header {
 	height: 50px;
 }
 .gamestatbox{
-	height:50px;
+	height:25px;
 }
 .gamestatbox h3{
 	float:left;

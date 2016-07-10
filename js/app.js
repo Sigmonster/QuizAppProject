@@ -79,7 +79,7 @@ $(document).ready(function() {
 			if (gameOver==true)
 				finalPage();
 		});
-		$(".bannerbuttons").on("click",".NewGameButton",function(){
+		$(".bannerbuttons").on("click",".newGameButton",function(){
 			/*Debug*/console.log("clicked NewGame Button!");
 			newGame();
 		});
@@ -131,6 +131,7 @@ $(document).ready(function() {
 			$("#stat3").text(Stats.percentIncorrect);
 		}
 	function finalPage(){
+		Stats.endTime=Date();
 		$("#final1").text(Stats.questionCount);
 		$("#final2").text(Stats.percentCorrect);
 		$("#final3").text(Stats.percentIncorrect);
@@ -163,7 +164,6 @@ $(document).ready(function() {
 	}
 	function loadNextQuestion(){
 		if (gameOver==true){
-			Stats.endTime=Date();
 			finalPage();
 		}
 		questionCounter++;
