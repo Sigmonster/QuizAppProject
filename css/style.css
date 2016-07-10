@@ -10,7 +10,7 @@ div, ul, li, p, h1, h2, h3, h4, h5, section {
 html {
 	box-sizing: border-box;
 	-webkit-font-smoothing: antialiased;
-
+	
 }
 *, *:before, *:after {
 	box-sizing: inherit;
@@ -39,23 +39,32 @@ input[type="button"] {
     margin: 4px 2px;
     cursor: pointer;
 }
+input[type="button"]:hover {
+	background-color: #7EAF4C;
+}
 /*header section*/
 header {
 
 }
+.bannerbox{
+	margin-top: 10px;
+	padding-top:10px;
+	text-transform: uppercase;
+}
 .bannerbuttons li{
 	display: inline-block;
 }
+body {
+	background-color: slategray;
+}
 /*game-area section*/
 #game-overlay, #overlay-lastpage{
-	height:850px;
+	height:772px;
 	width:900px;
 	position:absolute;
 	margin:0 auto 0 auto;
 	background-color: black;
 	color:white;
-	border-width:5px;
-
 }
 #game-overlay h2, #overlay-lastpage h2{
 padding-top: 125px;
@@ -64,26 +73,39 @@ padding-top: 125px;
 	display:none;
 }
 .game-area{
-	height: 850px;
+	height: 772px;
 	margin:0 auto 0 auto;
-	border-width:5px;	
-	border-style:inset;
 }
 .questionbox{
-	height:50px;
+	height:60px;
 }
 .questionbox h3{
+	margin: 0 10px 0 10px;
 	height: 50px;
+	text-align: justify;
+    padding: 10px 20px 0 20px;
 }
 .gamestatbox{
-	height:25px;
+	height:40px;
+	background-color: gainsboro;
+	border-bottom: 2px solid black; 
+	text-transform: uppercase;
+}
+#correctspan{
+	color:#4CAF50;
+}
+#incorrectspan{
+	color:indianred;
 }
 .gamestatbox h3{
 	float:left;
+	margin: 0px 10px 0 10px;
+	text-align: justify;
+    padding: 10px 20px 0 20px;
 }
 .contentimg{
 	display:inline;
-	height:170px;
+	height:160px;
 	width:auto;
 }
 .game-area li{
@@ -92,13 +114,13 @@ padding-top: 125px;
 	list-style:none;
 }
 .choicelist h3{
-	padding-top:80px;
+	padding-top:65px;
 }
 .contentlist h3{
-	padding-top:80px;
+	padding-top:65px;
 }
 .game-area ul{
-	height:700px;
+	height:625px;
 }
 .game-area .questioncontentbox{
 	width: 50%;
@@ -110,3 +132,8 @@ padding-top: 125px;
 	min-height:600px;
 	float:right;
 }
+
+input[type="radio"]:hover{
+    cursor: pointer;
+}
+
